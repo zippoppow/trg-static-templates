@@ -1,0 +1,68 @@
+@import './base/layout.css';
+@import './components/dashboard.css';
+@import './components/nav.css';
+
+
+
+
+/*
+Parent and Sibling Combinators
+    > = the child combinator
+    + = the adjacent sibling combinator
+    ~ = the general sibling combinator
+
+
+Units
+-- em, rem  (prefer rem)
+    1rem is the font-size of the root element (either :root or html)
+    Using a relative size like rem to define font sizes across your website is recommended. 
+
+--viewport units (vh, vw)
+    1vh = 1% of viewport height
+    1vw = 1% of viewport width
+
+Pseudo-selectors (pseudo-classes & pseudo-elements)
+
+--pseudo-classes (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+    "...Pseudo-classes offer us different ways to target elements in our HTML. There are quite a lot of them, and they come in a couple of different flavors. Some are based on their position or structure within the HTML. Others are based on the state of a particular element, or how the user is currently interacting with it. ..."
+
+    :focus applies to an element that is currently selected by the user either through selecting it with their cursor or using their keyboard.
+
+    :hover will affect anything under the users mouse pointer. It can be used to give extra oomph to buttons and links to highlight that they’re interactable, or to trigger a drop down menu.
+
+    :active applies to elements that are currently being clicked, and is especially useful for giving your user feedback that their action had an effect. This is a great one to give your buttons and other interactive elements more ‘tactile’ feedback.
+
+    :first-child and :last-child will match elements that are the first or last sibling.
+
+    :empty and :only-child will match elements that have no children at all, or just one.
+
+    :nth-child -- For a more dynamic approach we can use :nth-child. This is a flexible pseudo-class with a few different uses.
+
+--pseudo-elements (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+    "...A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, ::first-line can be used to change the font of the first line of a paragraph...."
+
+    "...While pseudo-classes give us an alternative way to interact with our HTML elements based on their state or structure, pseudo-elements are more abstract. They allow us to affect parts of our HTML that aren’t elements at all...."
+
+        ::marker allows you to customize the styling of your <li> elements’ bullets or numbers.
+
+        ::first-letter and ::first-line allow you to (you guessed it!) give special styling to the first letter or line of some text.
+
+        ::before and ::after allow us to add extra elements onto the page with CSS, instead of HTML. Using it to decorate text in various ways is one common use case.
+
+Attribute Selectors (https://learn.shayhowe.com/advanced-html-css/complex-selectors/)
+
+    [attribute] - This general selector will select anything where the given attribute exists. Its value doesn’t matter.
+    selector[attribute] - Optionally we can combine our attribute selectors with other types of selectors, such as class or element selectors.
+    [attribute="value"] - To get really specific, we can use = to match a specific attribute with a specific value.
+    [attribute^="value"] - ^= Will match strings from the start.
+    [attribute$="value"] - $= Will match strings from the end.
+    [attribute*="value"] - *= The wildcard selector will match anywhere inside the string.
+
+
+Fonts
+--font stacks
+    a common one: 
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            }
+*/
