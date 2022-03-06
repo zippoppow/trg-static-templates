@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "browser-sync start --directory --server --files '*.js, *.html, *.css'"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,8 @@
     "postcss": "^8.4.7"
   },
   "dependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp-connect": "^5.7.0",
     "sass": "^1.49.9"
   }
 }
