@@ -1,5 +1,23 @@
 
 .container__dashboard{
+    border: 1px solid $primary-color;
+    border-radius: .75rem;
 
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: [row1-start] 10% [row1-end] auto [third-line] 10% [last-line];
 
+    &.container__dashboard--header{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: row1-start;
+        grid-row-end: row1-end;
+
+    }
+    &.container__dashboard--body{
+        
+    }
+    &.container__dashboard--footer{
+        
+    }
 }
