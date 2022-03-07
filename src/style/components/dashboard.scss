@@ -1,23 +1,28 @@
 
+  /*
+      fr: fractional elements = the amount of space left after all of the
+      elements have been laid out
+    */
+
+
 .container__dashboard{
     border: 1px solid $primary-color;
     border-radius: .75rem;
 
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: [row1-start] 10% [row1-end] auto [third-line] 10% [last-line];
+    grid-gap: 5px;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
 
     &.container__dashboard--header{
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: row1-start;
-        grid-row-end: row1-end;
 
+        /* end is -1 */
+        grid-column: 1 / -1;
     }
     &.container__dashboard--body{
-        
+        grid-column: 1 / -1;     
     }
     &.container__dashboard--footer{
-        
+        grid-column: 1 / -1;    
     }
 }
